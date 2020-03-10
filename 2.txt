@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner in=new Scanner(System.in);
+       int a=in.nextInt();
+        int b=in.nextInt();
+        int c=in.nextInt();
+        int r=0,x,y,z;
+        for (int i = 31; i >= 0; i--) { 
+             int p= a>> i; 
+             int  q=b>>i;
+             int v=c>>i;
+        if ((p & 1)>0) 
+            x=1 ;
+        else
+           
+         x=0; 
+        if((q&1)>0)
+            y=1;
+        else
+            y=0;
+        if((v&1)>0)
+            z=1;
+        else
+            z=0;
+            
+            if(x==y && x==0 && z==1)
+                r++;
+            if(x==y && x==1 && z==0)
+                r=r+2;
+            if(x!=y && z==0)
+                r++;
+           
+        
+    }
+        System.out.println(r);
+    }
+}

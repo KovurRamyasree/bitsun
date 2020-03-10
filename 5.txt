@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner in=new Scanner(System.in);
+	int n=in.nextInt();
+	int r[]= new int[n+1];
+    int h = 1; 
+    int an = 1;
+    for(int i=1; i<=num; i++){
+        if(i==an){
+            r[i] = 1;
+            an<<= 1;
+            h= 1;
+        }else{
+            r[i] = r[h]+1;
+            h++;
+        }
+ 
+    }
+    for(int i=1;i<=num;i++)
+	System.out.print(r[i]+" ");
+}

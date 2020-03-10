@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner in=new Scanner(System.in);
+       int n=in.nextInt();
+        Set<Integer> s=new HashSet<>();
+        List<Integer> l=new ArrayList<>();
+        int g,h,s1=0,s2=0;
+        for(int i=1;i<=n;i++)
+        {
+            g=in.nextInt();
+            h=g*3;
+            if(l.add(g))
+                s1=s1+g;
+            if(s.add(h))
+                s2=s2+h;
+        }
+        int r1=(int)(s2-s1)/2;
+        System.out.print(r1);
+    }
+}
