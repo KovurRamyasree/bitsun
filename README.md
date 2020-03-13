@@ -1,7 +1,7 @@
 # bitsun
 
 Common mistakes:
-
+TEST CASES SHOULD BE ADDED.
 Add test cases for the program in the form of comments or a file.
 The file pushed is a text file while a java file was expected.
 
